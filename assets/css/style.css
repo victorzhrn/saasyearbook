@@ -158,7 +158,11 @@ main {
   border: #9676eb 4px solid;
   transform: scale(1.02);
 }
-.saaslogo:hover img {
+.saaslogo:active {
+  border: #9670fe 4px solid;
+}
+.saaslogo:active img{
+  opacity: 0.9;
 }
 .saastitle {
   display: inline;
