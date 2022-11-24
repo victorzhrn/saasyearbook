@@ -5,8 +5,11 @@ font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: content-box;
 }
-
+:root {
+  font-size: 16px;
+}
 img {
   width: 100%;
   height: auto;
@@ -83,33 +86,65 @@ main {
   width: calc(100% - 72px);
   max-width: 1300px;
   position: absolute;
-  top: 45%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, -45%);
+  transform: translate(-50%, -30%);
+}
+.yearbookcontainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 64px;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 24px;
+}
+.introducation {
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.introducation h1 {
+  font-size: 4.5rem;
+  font-family: 'Kalam', cursive;
+  letter-spacing: 2px;
+  color: hsl(0, 0%, 100%, 0.9);
+  text-decoration: underline;
+}
+.introducation h4 {
+  font-size: 2rem;
+  font-family: 'Kalam', cursive;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%, 0.8);
 }
 .saaswrapper {
   margin-bottom: 20px;
   margin: auto;
 }
-.saaslogo img:hover {
+.highlight {
+  /* text-decoration: underline; */
+  background-color: #307cf7;
+}
+
+.saaslogo {
+  display: inline-block;
+  box-sizing: content-box;
+  padding: 8px;
+  border-radius: 8px;
+  border: rgb(255, 255, 255, 0) 2px solid;
+  transition: all 0.15s ease-in-out;
+}
+.saaslogo img {
+  display: inline;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: auto;
   opacity: 1;
   box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.39);
   -webkit-box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.39);
   -moz-box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.39);
+  box-sizing: content-box;
 }
-.saaslogo {
-  display: inline;
-}
-.saaslogo img {
-  display: inline;
-  width: 120px;
-  height: 120px;
-  border-radius: 8px;
-  margin: auto;
-  opacity: 0.9;
+.saaslogo:hover {
+  border: #307cf7 2px solid;
 }
 .saastitle {
   display: inline;
@@ -125,6 +160,69 @@ main {
   font-weight: 1000;
   margin-bottom: 24px;
 }
+.footer {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  text-align: center;
+  align-items: center;
+  font-family: 'Kalam', cursive;
+}
+.footer > div {
+  margin: auto;
+}
+.poweredby p,
+.poweredby a,
+.poweredby div,
+.poweredby img {
+  display: inline;
+  color: hsl(0, 0%, 100%, 0.6);
+}
+.poweredby {
+  font-size: 1.4rem;
+  display: inline-flex;
+  align-items: center;
+}
+.poweredby div {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 4px;
+  border-radius: 4px;
+  margin-left: 8px;
+  font-size: 0.8em;
+  transition: all 0.15s ease-in-out;
+}
+.poweredby div:hover {
+  background-color: #307cf7;
+  color: #fff !important;
+}
+.poweredby div:hover p {
+  color: #fff !important;
+}
+.poweredby div img {
+  height: 24px;
+  width: auto;
+  margin-right: 8px;
+}
+.channel {
+  color: hsl(0, 0%, 100%, 0.4);
+}
+.channel p,
+.channel a,
+.channel div {
+  display: inline;
+  color: hsl(0, 0%, 100%, 0.4);
+}
+.channel div {
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: all 0.15s ease-in-out;
+}
+.channel div:hover {
+  background-color: rgb(60, 64, 80);
+  color: #fff !important;
+}
 
 @media only screen and (max-width: 1300px) {
   .headline {
@@ -138,25 +236,54 @@ main {
   .logotitle {
     font-size: calc(100vw * 0.02 - 2px);
   }
+  :root {
+    font-size: 14px;
+  }
 }
 
-@media only screen and (max-width: 1000px) {
-  .headline {
-    font-size: calc(100vw * 0.013 + 25px);
-    margin-bottom: 16px;
+@media only screen and (max-width: 800px) {
+  .yearbookcontainer {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .superuslogo {
-    width: 24px;
-    height: 24px;
-  }
-  .logotitle {
-    font-size: 18px;
+  :root {
+    font-size: 13px;
   }
 }
 
 @media only screen and (max-width: 550px) {
   .maincontentwrapper {
-    grid-template-columns: 1fr 1fr;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 1300px;
+    top: 0px;
+    left: 0px;
+    transform: none;
+  }
+  :root {
+    font-size: 10px;
+  }
+  main {
+    padding: 40px 0px;
+  }
+
+  .yearbookcontainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 24px;
+    margin-bottom: 40px;
+  }
+  .footer {
+    position: relative;
+    bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20000px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    text-align: center;
+    align-items: center;
+    font-family: 'Kalam', cursive;
   }
 
   .headline {
@@ -169,18 +296,6 @@ main {
   }
   .maincontentwrapper {
     width: calc(100% - 36px);
-  }
-}
-@media only screen and (max-width: 400px) {
-  .maincontentwrapper {
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-@media only screen and (min-width: 1001px) {
-  .gifdemowrappermid {
-    display: none;
   }
 }
 
