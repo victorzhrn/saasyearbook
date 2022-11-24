@@ -274,6 +274,9 @@ main {
 }
 
 @media only screen and (max-width: 550px) {
+  .introducation h1{
+    font-size: 4rem;
+  }
   .maincontentwrapper {
     position: relative;
     margin: auto;
@@ -288,20 +291,23 @@ main {
   }
   main {
     padding: 40px 0px;
+    position: relative;
+    height:auto;
   }
 
   .yearbookcontainer {
     position: relative;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    row-gap: 24px;
+    row-gap: 8px;
     margin-bottom: 40px;
   }
+  .leftside{display: none;}
   .footer {
     position: relative;
-    bottom: 20px;
+    bottom: auto;
     margin-top: 20px;
-    margin-bottom: 20000px;
+    margin-bottom: 0px;
     left: 50%;
     transform: translate(-50%, 0px);
     text-align: center;
@@ -320,19 +326,13 @@ main {
     width: calc(100% - 36px);
   }
 }
-
-@media only screen and (max-height: 900px) {
-  .headline {
-    margin-bottom: calc(100vh * 0.08 - 56px);
-  }
-}
-@media only screen and (max-height: 850px) {
-  .headline {
-    margin-bottom: 12px;
-  }
-}
-@media only screen and (max-height: 800px) {
+@media only screen and (max-height: 950px) and (max-width: 800px) {
   main {
-    height: 800px;
+    height: 950px;
+  }
+}
+@media only screen and (max-height: 900px) and (min-width: 550px) {
+  main {
+    height: 900px;
   }
 }
