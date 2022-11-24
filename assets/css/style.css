@@ -1,6 +1,3 @@
-/*
-font-family: 'Roboto', sans-serif;
-*/
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +6,7 @@ font-family: 'Roboto', sans-serif;
 }
 :root {
   font-size: 16px;
+  font-family: 'Poppins', sans-serif;
 }
 img {
   width: 100%;
@@ -21,7 +19,6 @@ a {
 
 body {
   background-color: #181818;
-  font-family: 'Nunito Sans', sans-serif;
 }
 
 header {
@@ -93,7 +90,7 @@ main {
 .yearbookcontainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 24px;
+  row-gap: 16px;
 }
 .introducation {
   margin: auto;
@@ -103,15 +100,22 @@ main {
 }
 .introducation h1 {
   font-size: 4.5rem;
-  font-family: 'Kalam', cursive;
   letter-spacing: 2px;
-  color: hsl(0, 0%, 100%, 0.9);
-  text-decoration: underline;
+  margin-bottom: 8px;
+  font-family: 'Poppins', sans-serif;
+
+  background: linear-gradient(180deg, #3461fe 19.34%, #9c77ea 73.48%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 .introducation h4 {
-  font-size: 2rem;
-  font-family: 'Kalam', cursive;
-  font-weight: 400;
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  max-width: 800px;
+  margin: auto;
   color: hsl(0, 0%, 100%, 0.8);
 }
 .saaswrapper {
@@ -120,15 +124,22 @@ main {
 }
 .highlight {
   /* text-decoration: underline; */
-  background-color: #307cf7;
+  /* font-family: 'Sedgwick Ave', cursive; */
+  letter-spacing: 2px;
+  background: linear-gradient(180deg, #9676eb 19.34%, #c399f9 73.48%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding: 0px 4px;
 }
 
 .saaslogo {
   display: inline-block;
   box-sizing: content-box;
-  padding: 8px;
+  padding: 4px;
   border-radius: 8px;
-  border: rgb(255, 255, 255, 0) 2px solid;
+  border: rgb(255, 255, 255, 0) 4px solid;
   transition: all 0.15s ease-in-out;
 }
 .saaslogo img {
@@ -144,7 +155,10 @@ main {
   box-sizing: content-box;
 }
 .saaslogo:hover {
-  border: #307cf7 2px solid;
+  border: #9676eb 4px solid;
+  transform: scale(1.02);
+}
+.saaslogo:hover img {
 }
 .saastitle {
   display: inline;
@@ -164,25 +178,28 @@ main {
   position: absolute;
   bottom: 60px;
   left: 50%;
-  transform: translate(-50%, 0px);
+  transform: translate(-50%,0px);
+  width: calc(100% - 72px);
+  max-width: 1300px;
   text-align: center;
   align-items: center;
-  font-family: 'Kalam', cursive;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
 }
-.footer > div {
-  margin: auto;
-}
+
 .poweredby p,
 .poweredby a,
 .poweredby div,
 .poweredby img {
   display: inline;
-  color: hsl(0, 0%, 100%, 0.6);
+  color: hsl(0, 0%, 100%, 0.4);
 }
 .poweredby {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   display: inline-flex;
   align-items: center;
+  font-weight: 400;
 }
 .poweredby div {
   display: inline-flex;
@@ -190,38 +207,44 @@ main {
   padding: 4px 4px;
   border-radius: 4px;
   margin-left: 8px;
-  font-size: 0.8em;
+  font-size: 1em;
   transition: all 0.15s ease-in-out;
+  font-weight: 800;
+}
+.poweredby div p {
+  color: hsl(0, 0%, 100%, 0.9);
 }
 .poweredby div:hover {
-  background-color: #307cf7;
+  background-color: #9676eb;
   color: #fff !important;
 }
 .poweredby div:hover p {
   color: #fff !important;
 }
 .poweredby div img {
-  height: 24px;
+  height: 32px;
   width: auto;
   margin-right: 8px;
 }
 .channel {
-  color: hsl(0, 0%, 100%, 0.4);
+  display: flex;
+  justify-content: end;
 }
-.channel p,
-.channel a,
-.channel div {
-  display: inline;
-  color: hsl(0, 0%, 100%, 0.4);
+
+.channel a {
+  margin-left: 16px;
 }
-.channel div {
-  padding: 2px 4px;
-  border-radius: 4px;
-  transition: all 0.15s ease-in-out;
+.channel img {
+  width: 32px;
+  height: auto;
+  opacity: 0.8;
 }
-.channel div:hover {
-  background-color: rgb(60, 64, 80);
-  color: #fff !important;
+
+.channel a:hover img {
+  opacity: 1;
+}
+.leftside {
+  width: 84px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -283,7 +306,6 @@ main {
     transform: translate(-50%, 0px);
     text-align: center;
     align-items: center;
-    font-family: 'Kalam', cursive;
   }
 
   .headline {
