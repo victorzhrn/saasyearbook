@@ -33,7 +33,7 @@ header {
   display: flex;
   justify-content: center;
   margin: auto;
-  max-width: 1300px;
+  max-width: 1200px;
 }
 
 .superuslogo {
@@ -91,6 +91,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 16px;
+  column-gap: 8px;
 }
 .introducation {
   margin: auto;
@@ -164,6 +165,7 @@ main {
 .saaslogo:active img{
   opacity: 0.9;
 }
+
 .saastitle {
   display: inline;
   margin-top: 8px;
@@ -184,7 +186,7 @@ main {
   left: 50%;
   transform: translate(-50%,0px);
   width: calc(100% - 72px);
-  max-width: 1300px;
+  max-width: 1200px;
   text-align: center;
   align-items: center;
   font-family: 'Poppins', sans-serif;
@@ -285,7 +287,7 @@ main {
     position: relative;
     margin: auto;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1200px;
     top: 0px;
     left: 0px;
     transform: none;
@@ -294,7 +296,7 @@ main {
     font-size: 10px;
   }
   main {
-    padding: 40px 0px;
+    padding: 60px 0px;
     position: relative;
     height:auto;
   }
