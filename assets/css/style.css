@@ -139,7 +139,7 @@ main {
   display: inline-block;
   box-sizing: content-box;
   padding: 4px;
-  border-radius: 8px;
+  border-radius: 14px;
   border: rgb(255, 255, 255, 0) 4px solid;
   transition: all 0.15s ease-in-out;
 }
@@ -210,7 +210,7 @@ main {
 .poweredby div {
   display: inline-flex;
   align-items: center;
-  padding: 4px 4px;
+  padding: 4px 8px 4px 8px;
   border-radius: 4px;
   margin-left: 8px;
   font-size: 1em;
@@ -270,7 +270,7 @@ main {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 690px) {
   .yearbookcontainer {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -332,13 +332,23 @@ main {
     width: calc(100% - 36px);
   }
 }
-@media only screen and (max-height: 950px) and (max-width: 800px) {
+/* @media only screen and (max-height: 950px) and (max-width: 800px) {
+
   main {
     height: 950px;
   }
-}
-@media only screen and (max-height: 900px) and (min-width: 550px) {
+} */
+@media only screen and (max-height: 850px) and (min-width: 550px) {
+  :root{
+    font-size: 13px;
+  }
+  .introducation{
+    margin-bottom: 32px;
+  }
   main {
-    height: 900px;
+    min-height: 800px;
+  }
+  .footer{
+    bottom: 40px;
   }
 }
