@@ -162,7 +162,7 @@ main {
 .saaslogo:active {
   border: #9670fe 4px solid;
 }
-.saaslogo:active img{
+.saaslogo:active img {
   opacity: 0.9;
 }
 
@@ -184,7 +184,7 @@ main {
   position: absolute;
   bottom: 60px;
   left: 50%;
-  transform: translate(-50%,0px);
+  transform: translate(-50%, 0px);
   width: calc(100% - 72px);
   max-width: 1200px;
   text-align: center;
@@ -280,7 +280,7 @@ main {
 }
 
 @media only screen and (max-width: 550px) {
-  .introducation h1{
+  .introducation h1 {
     font-size: 4rem;
   }
   .maincontentwrapper {
@@ -298,7 +298,7 @@ main {
   main {
     padding: 60px 0px;
     position: relative;
-    height:auto;
+    height: auto;
   }
 
   .yearbookcontainer {
@@ -308,7 +308,9 @@ main {
     row-gap: 8px;
     margin-bottom: 40px;
   }
-  .leftside{display: none;}
+  .leftside {
+    display: none;
+  }
   .footer {
     position: relative;
     bottom: auto;
@@ -339,16 +341,36 @@ main {
   }
 } */
 @media only screen and (max-height: 850px) and (min-width: 550px) {
-  :root{
+  :root {
     font-size: 13px;
   }
-  .introducation{
+  .introducation {
     margin-bottom: 32px;
   }
   main {
-    min-height: 800px;
+    min-height: 650px;
   }
-  .footer{
+  .footer {
     bottom: 40px;
+  }
+
+  .yearbookcontainer {
+    width: 90%;
+    margin: auto
+  }
+}
+@media only screen and (max-height: 750px) and (min-width: 550px) {
+
+  .yearbookcontainer {
+    width: 80%;
+    margin: auto
+  }
+}
+
+@media only screen and (max-height: 700px) and (min-width: 550px) {
+
+  .yearbookcontainer {
+    width: 70%;
+    margin: auto
   }
 }
