@@ -184,14 +184,21 @@ main {
   position: absolute;
   bottom: 60px;
   left: 50%;
+  width: 100%;
+  padding: 0px 36px;
   transform: translate(-50%, 0px);
   width: calc(100% - 72px);
-  max-width: 1200px;
+  max-width: 1300px;
+  transition: all 0.1s ease-in-out;
+}
+.footer > div {
+  margin: auto;
   text-align: center;
   align-items: center;
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: space-between;
+  transition: all 0.1s ease-in-out;
 }
 
 .poweredby p,
@@ -333,6 +340,7 @@ main {
   .maincontentwrapper {
     width: calc(100% - 36px);
   }
+
 }
 /* @media only screen and (max-height: 950px) and (max-width: 800px) {
 
@@ -351,26 +359,33 @@ main {
     min-height: 650px;
   }
   .footer {
-    bottom: 40px;
+    bottom: 20px;
   }
 
   .yearbookcontainer {
     width: 90%;
-    margin: auto
+    margin: auto;
+  }
+  .footer > div {
+    margin: 0px 5%;
   }
 }
 @media only screen and (max-height: 750px) and (min-width: 550px) {
-
   .yearbookcontainer {
     width: 80%;
-    margin: auto
+    margin: auto;
+  }
+  .footer > div {
+    margin: 0px 10%;
   }
 }
 
 @media only screen and (max-height: 700px) and (min-width: 550px) {
-
   .yearbookcontainer {
     width: 70%;
-    margin: auto
+    margin: auto;
+  }
+  .footer > div {
+    margin: 0px 15%;
   }
 }
