@@ -185,7 +185,7 @@ main {
   bottom: 60px;
   left: 50%;
   width: 100%;
-  padding: 0px 18px;
+  padding: 0px 36px;
   transform: translate(-50%, 0px);
   width: calc(100% - 72px);
   max-width: 1300px;
@@ -242,11 +242,13 @@ main {
 .channel {
   display: flex;
   justify-content: start;
-  align-items: center;  
+  align-items: center;
+  width: 200px;
+  height: 54px;
 }
 
-.channel a {
-  margin-right: 16px;
+.mediaright {
+  margin-left: 16px;
 }
 .channel img {
   width: 32px;
@@ -293,6 +295,13 @@ main {
 }
 
 @media only screen and (max-width: 550px) {
+  .channel {
+  width: auto;
+  height: auto;
+}
+.footer{
+    padding: 0px 0px;
+}
   .introducation h1 {
     font-size: 4rem;
   }
