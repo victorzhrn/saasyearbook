@@ -209,7 +209,7 @@ main {
   color: hsl(0, 0%, 100%, 0.4);
 }
 .poweredby {
-  font-size: 1rem;
+  font-size: 1.2rem;
   display: inline-flex;
   align-items: center;
   font-weight: 400;
@@ -220,12 +220,12 @@ main {
   padding: 4px 8px 4px 8px;
   border-radius: 4px;
   margin-left: 8px;
-  font-size: 1rem;
+  font-size: 1em;
   transition: all 0.15s ease-in-out;
   font-weight: 800;
 }
 .poweredby div p {
-  color: hsl(0, 0%, 100%, 0.8);
+  color: hsl(0, 0%, 100%, 0.9);
 }
 .poweredby div:hover {
   background-color: #9676eb;
