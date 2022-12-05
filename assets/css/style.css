@@ -241,7 +241,7 @@ main {
 }
 .channel {
   display: flex;
-  justify-content: start;
+  justify-content: end;
   align-items: center;
   width: 200px;
   height: 54px;
